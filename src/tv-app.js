@@ -17,6 +17,7 @@ export class TvApp extends LitElement {
     return 'tv-app';
   }
   // LitElement convention so we update render() when values change
+  
   static get properties() {
     return {
       name: { type: String },
@@ -40,6 +41,7 @@ export class TvApp extends LitElement {
   render() {
     return html`
       <h2>${this.name}</h2>
+      <div>
       ${
         this.listings.map(
           (item) => html`
@@ -52,6 +54,8 @@ export class TvApp extends LitElement {
           `
         )
       }
+      </div>
+      
       <div>
         <!-- video -->
         <!-- discord / chat - optional -->
