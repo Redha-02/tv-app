@@ -34,6 +34,16 @@ export class TvApp extends LitElement {
         margin: 16px;
         padding: 16px;
       }
+      .tv-channels-wrapper {
+        display: flex;
+        overflow-x: auto;
+      }
+      .tv-channel {
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 10px;
+        min-width: 200px;
+      }
       `
     ];
   }
@@ -54,8 +64,13 @@ export class TvApp extends LitElement {
           `
         )
       }
-      </div>
-      
+      <!-- is this correct? -->
+      </div class="tv-channels-wrapper">
+        <div class="tv-channel">
+
+        </div>
+
+
       <div>
         <!-- video -->
         <!-- discord / chat - optional -->
