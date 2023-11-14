@@ -44,6 +44,11 @@ export class TvApp extends LitElement {
         margin: 10px;
         min-width: 200px;
       }
+      .discord {
+        display: inline-flex;
+
+
+      }
       `
     ];
   }
@@ -66,14 +71,19 @@ export class TvApp extends LitElement {
       }
       <!-- is this correct? -->
       </div class="tv-channels-wrapper">
-        <div class="tv-channel">
-
-        </div>
+    
 
 
       <div>
         <!-- video -->
+        <iframe id="player" class="has-ratio box p-0" width="560" height="315" src="https://www.youtube.com/embed/QJMBhXjtaYU?enablejsapi=1" 
+        title="RECLAIM OPEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen=""></iframe>
         <!-- discord / chat - optional -->
+        <div class= " discord">
+              <widgetbot server="954008116800938044" channel="1106691466274803723" width="100%" height="100%" style="display: inline-block; overflow: hidden; background-color: rgb(54, 57, 62); border-radius: 7px; vertical-align: top; width: 100%; height: 100%;"><iframe title="WidgetBot Discord chat embed" allow="clipboard-write; fullscreen" src="https://e.widgetbot.io/channels/954008116800938044/1106691466274803723?api=a45a80a7-e7cf-4a79-8414-49ca31324752" style="border: none; width: 100%; height: 100%;"></iframe></widgetbot>
+              <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+            </div>
       </div>
       <!-- dialog -->
       <sl-dialog label="Dialog" class="dialog">
